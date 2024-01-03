@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
-html, body {
-    min-height: 100vh;
-    font-family: "Roboto, sans-serif";
-    display: flex;
-    flex-direction: column;
+* {
     margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Roboto Slab', serif";
+    
 }
 
 .one {
@@ -35,20 +38,8 @@ html, body {
 
 ul{
     list-style-type: none;
-    padding: 0;
     gap: 10px;
     display: flex;
-}
-
-a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.content {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .one .left {
@@ -57,22 +48,48 @@ a {
 
 .h1 {
     font-size: 48px;
-    font-weight: 800;
+    font-weight: bolder;
     color: #F9FAF8;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
 }
 
 .content-right {
     display: flex;
-    padding: 12px;
-    height: 200px;
-    width: auto;
-
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
 }
 
-.header-link {
+img {
+    margin-bottom: 20px;
+}
+
+.p-first {
     font-size: 18px;
     color: #E5E7EB;
 
+}
+
+.signup-first {
+    background-color: #3882F6;
+    border: 1px solid #3882F6;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    
 }
 
 .two {
@@ -82,60 +99,123 @@ a {
     align-items: center;
 }
 
-.two .header {
+h2 {
     font-size: 36px;
     font-weight: 800;
     text-align: center;
     margin-bottom: 1em;
+    color: #1F2937
 }
 
-.images {
+.boxes {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 50%;
+    gap: 30%;
+    margin-bottom: 25px;
     
 }
 
-.info {
+.blue-box {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.info img {
+.blue-box img {
     padding: 2em;
     border: 2px solid #3882F6;
     border-radius: 25%;
     max-height: 90px;
-    max-width: 82px;
+    max-width: 90px;
 }
 
 .three {
     background-color:#E5E7EB;
     display: flex;
     justify-content: center;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.paragraph {
+h3 {
     display: flex;
     font-size: 36px;
     font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    text-align: left;
 
 }
 
-.quoted {
+#quoted {
     display: flex;
-    justify-content: flex-end;
+    margin-left: 500px;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .four {
     background-color: #FFFFFF;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button {
+.bubble {
+    display: flex;
+    flex-direction: row;
     background-color: #3882F6;
-    border: 2px solid #FFFFFF;
+    border: #3882F6;
+    border-radius: 10px;
+    width: 60%;
+    height: 40%;
+}
+
+.left {
+    width: 80%;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h4 {
+    font-size: 24px;
+    color: white;
+    
+}
+
+.product {
+    color: white;
+    font-size: 18px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.signup-last {
+    background-color: #3882F6;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    color: #FFFFFF;
+    width: 100px;
+    height: 40px;
     
 }
 
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1F2937;
+    color: #E5E7EB;
+    height: 70px;
 }
